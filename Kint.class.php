@@ -203,8 +203,9 @@ class Kint
 
 			unset( $function, $args, $file, $line, $source );
 		}
-
+		ob_start('kint_debug_globals');
 		include KINT_DIR . 'view/trace.phtml';
+		ob_end_flush();
 	}
 
 	/**
