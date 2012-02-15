@@ -36,6 +36,8 @@ We've also baked in a few functions that are WordPress specific:
 * `dump_wp()`
 * `dump_post()`
 
+When you use the ever awesome Debug Bar plugin, Kint Debugger keeps your theme looking beautiful by placing all debug output into a Debug Bar sub-panel. If you are not using Debug Bar, your debug output will be displayed inline.
+
 == Installation ==
 
 Upload the Kint Debugger plugin to your `wp-content/plugins/` directory and activate.
