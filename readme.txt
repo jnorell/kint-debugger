@@ -19,18 +19,18 @@ Kint Debugger is a simple WordPress wrapper for [Kint](http://code.google.com/p/
 For those who love Krumo, **Kint is Krumo++**.
 
 Dumping variables is easy:
-1. `d($variable)` will output a styled, collapsible container with your variable information
-1. `dd($variable)` will do exactly as d() except halt execution of the script
-1. `s($variable)` will output a simple, un-styled whitespace container
-1. `sd($variable)` will do exactly as s() except halt execution of the script
+* `d($variable)` will output a styled, collapsible container with your variable information
+* `dd($variable)` will do exactly as d() except halt execution of the script
+* `s($variable)` will output a simple, un-styled whitespace container
+* `sd($variable)` will do exactly as s() except halt execution of the script
 
 Backtrace is also easy:
-1. `Kint::trace()` The displayed information for each step of the trace includes the source snippet, passed arguments and the object at the time of calling
+* `Kint::trace()` The displayed information for each step of the trace includes the source snippet, passed arguments and the object at the time of calling
 
 We've also baked in a few functions that are WordPress specific:
-1. `dump_wp_query()`
-1. `dump_wp()`
-1. `dump_post()`
+* `dump_wp_query()`
+* `dump_wp()`
+* `dump_post()`
 
 == Installation ==
 
