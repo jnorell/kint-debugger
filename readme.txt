@@ -8,7 +8,7 @@ Requires at least: 2.5
 Tested up to: 3.3
 Stable tag: 0.2
 
-Kint Debugger makes debugging and dumping variables a more pleasant experience. Kint integrates seamlessly with the Debug Bar plugin.
+Kint Debugger makes debugging and dumping variables a more pleasant experience. Kint Debugger integrates seamlessly with the Debug Bar plugin.
 
 == Description ==
 
@@ -42,7 +42,7 @@ Upload the Kint Debugger plugin to your `wp-content/plugins/` directory and acti
 
 == Frequently Asked Questions ==
 
-= I called the debug functions, but I can't find the output! =
+= I have called the debug functions, but I can't find the output! =
 * If you have the Debug Bar plugin installed, all of your debug results will be displayed under the "Kint Debugger" sub panel.
 
 If you have a feature request or question, please use the [Kint Debugger support forum](http://wordpress.org/tags/kint-debugger).
