@@ -47,7 +47,7 @@ If you have a question about Kint specifically, please visit the [Kint site](htt
 
 == Screenshots ==
 
-1. screenshot.png
+1. Kint debugging outputs are easy on the eyes.
 
 == Changelog ==
 
