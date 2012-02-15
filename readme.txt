@@ -3,7 +3,7 @@ Contributors: misternifty
 Author: Brian Fegter
 Author URI: http://coderrr.com/
 Plugin URI: http://code.google.com/p/kint/
-Tags: debug, debugger, print_r, var_dump, backtrace, debug_backtrace, krumo, php, tool, trace
+Tags: debug, debugger, print_r, var_dump, backtrace, debug_backtrace, krumo, php, tool, trace, developer
 Requires at least: 3.1
 Tested up to: 3.3
 Stable tag: 0.1
