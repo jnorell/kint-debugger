@@ -3,20 +3,21 @@ Contributors: misternifty
 Author: Brian Fegter
 Author URI: http://coderrr.com/
 Plugin URI: http://code.google.com/p/kint/
-Tags: debug, debugger, print_r, var_dump, backtrace, debug_backtrace, krumo, php, tool, trace, developer
-Requires at least: 3.1
+Tags: debug, debugger, print_r, var_dump, backtrace, debug_backtrace, krumo, php, tool, trace, developer, debug-bar
+Requires at least: 2.5
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.2
 
-Kint Debugger makes debugging and dumping variables a more pleasant experience.
+Kint Debugger makes debugging and dumping variables a more pleasant experience. Kint integrates seamlessly with the Debug Bar plugin.
 
 == Description ==
 
-Kint Debugger is a simple WordPress wrapper for [Kint](http://code.google.com/p/kint), a debugging tool to output information about variables and traces. Debugging is presented in a styled, collapsible format that is easy on the eyes.
+Kint Debugger is a simple WordPress wrapper for [Kint](http://code.google.com/p/kint), a debugging tool to output information about variables and traces. Debugging is presented in a styled, collapsible format that is easy on the eyes. Kint Debugger plays nice with the Debug Bar plugin by creating it's own panel to display your debug results.
 
 **No more adding PRE tags before print_r or var_dump!**
 
 For those who love Krumo, **Kint is Krumo++**.
+
 
 Dumping variables is easy:
 
@@ -41,6 +42,9 @@ Upload the Kint Debugger plugin to your `wp-content/plugins/` directory and acti
 
 == Frequently Asked Questions ==
 
+= I called the debug functions, but I can't find the output! =
+* If you have the Debug Bar plugin installed, all of your debug results will be displayed under the "Kint Debugger" sub panel.
+
 If you have a feature request or question, please use the [Kint Debugger support forum](http://wordpress.org/tags/kint-debugger).
 
 If you have a question about Kint specifically, please visit the [Kint site](http://code.google.com/p/kint/).
@@ -48,9 +52,12 @@ If you have a question about Kint specifically, please visit the [Kint site](htt
 == Screenshots ==
 
 1. Kint debugging outputs are easy on the eyes.
+2. Kint integrates with WP Debug Bar
 
 == Changelog ==
 
+= 0.2 =
+* Added Debug Bar support
 = 0.1 =
 * Added Kint 3.2 and created dump_wp_query(), dump_wp(), and dump_post() functions
 
