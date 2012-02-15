@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Kint Debugger
-Plugin URI: http://code.google.com/p/kint/
-Description: A simple WordPress wrapper for Kint, a debugging tool to output information about variables and traces. 
+Plugin URI: http://upthemes.com
+Description: A simple WordPress wrapper for Kint, a debugging tool to output information about variables and traces. Kint Debugger integrates seamlessly with the Debug Bar plugin.
 Version: 0.2
 Author: Brian Fegter
-Author URI: http://coderrr.com
+Author URI: http://upthemes.com
 License: MIT
 */
 
