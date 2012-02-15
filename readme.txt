@@ -2,7 +2,7 @@
 Contributors: misternifty, chriswallace
 Author: Brian Fegter
 Author URI: http://upthemes.com/
-Plugin URI: http://upthemes.com/
+Plugin URI: http://upthemes.com/plugins/kint-debugger
 Tags: debug, debugger, print_r, var_dump, backtrace, debug_backtrace, krumo, php, tool, trace, developer, debug-bar
 Requires at least: 2.5
 Tested up to: 3.3
