@@ -12,7 +12,7 @@ Kint Debugger makes debugging and dumping variables a more pleasant experience. 
 
 == Description ==
 
-Kint Debugger is a simple WordPress wrapper for [Kint](http://code.google.com/p/kint), a debugging tool to output information about variables and traces. Debugging is presented in a styled, collapsible format that is easy on the eyes. Kint Debugger plays nice with the Debug Bar plugin by creating it's own panel to display your debug results.
+Kint Debugger is a simple WordPress wrapper for [Kint](http://code.google.com/p/kint), a debugging tool to output information about variables and traces. Debugging is presented in a styled, collapsible format that is easy on the eyes. Kint Debugger plays nice with the Debug Bar plugin by creating its own panel to display your debug results.
 
 **No more adding PRE tags before print_r or var_dump!**
 
