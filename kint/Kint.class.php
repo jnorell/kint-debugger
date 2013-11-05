@@ -4,13 +4,15 @@
  *
  * https://github.com/raveren/kint
  */
+ob_start('kint_debug_globals');
 define( 'KINT_DIR', dirname( __FILE__ ) . '/' );
-require KINT_DIR . 'config.default.php';
-require KINT_DIR . 'parsers/parser.class.php';
+require_once KINT_DIR . 'config.default.php';
+require_once KINT_DIR . 'parsers/parser.class.php';
 
 if ( is_readable( KINT_DIR . 'config.php' ) ) {
-	require KINT_DIR . 'config.php';
+	require_once KINT_DIR . 'config.php';
 }
+ob_end_flush();
 
 class Kint
 {
@@ -64,8 +66,10 @@ class Kint
 			}
 		}
 
-		require KINT_DIR . 'decorators/rich.php';
-		require KINT_DIR . 'decorators/concise.php';
+		ob_start('kint_debug_globals');
+		require_once KINT_DIR . 'decorators/rich.php';
+		require_once KINT_DIR . 'decorators/concise.php';
+		ob_end_flush();
 	}
 
 	/**
@@ -79,7 +83,9 @@ class Kint
 	{
 		if ( !Kint::enabled() ) return;
 
+		ob_start('kint_debug_globals');
 		echo Kint_Decorators_Rich::_css();
+		ob_end_flush();
 
 		isset( $trace ) or $trace = debug_backtrace( true );
 
@@ -179,7 +185,9 @@ class Kint
 			unset( $function, $args, $file, $line, $source );
 		}
 
-		require KINT_DIR . 'view/trace.phtml';
+		ob_start('kint_debug_globals');
+		require_once KINT_DIR . 'view/trace.phtml';
+		ob_end_flush();
 	}
 
 	/**
@@ -253,14 +261,18 @@ class Kint
 		switch ( $modifier ) {
 			case '+':
 				self::$maxLevels = $maxLevelsOldValue;
+				ob_start('kint_debug_globals');
 				echo $output;
+				ob_end_flush();
 				break;
 			case '@':
 				self::$_firstRun = $firstRunOldValue;
 				return $output;
 				break;
 			default:
+				ob_start('kint_debug_globals');
 				echo $output;
+				ob_end_flush();
 				break;
 		}
 
@@ -576,12 +588,14 @@ if ( !function_exists( 's' ) ) {
 		if ( !Kint::enabled() ) return;
 
 		$argv = func_get_args();
+		ob_start('kint_debug_globals');
 		echo '<pre>';
 		foreach ( $argv as $k => $v ) {
 			$k && print( "\n\n" );
 			echo kintLite( $v );
 		}
 		echo '</pre>' . "\n";
+		ob_end_flush();
 	}
 
 	/**
@@ -594,12 +608,14 @@ if ( !function_exists( 's' ) ) {
 	{
 		if ( !Kint::enabled() ) return;
 
+		ob_start('kint_debug_globals');
 		echo '<pre>';
 		foreach ( func_get_args() as $k => $v ) {
 			$k && print( "\n\n" );
 			echo kintLite( $v );
 		}
 		echo '</pre>';
+		ob_end_flush();
 		die;
 
 	}
